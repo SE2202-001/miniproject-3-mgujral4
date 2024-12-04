@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Listings</h1>
+    <input type="file" id="fileInput" />
+    <div class="filter-container">
+      <select id="levelFilter">
+        <option value="">Filter by Level</option>
+      </select>
+      <select id="typeFilter">
+        <option value="">Filter by Type</option>
+      </select>
+      <select id="skillFilter">
+        <option value="">Filter by Skill</option>
+      </select>
+      <button id="filterButton">Filter Jobs</button>
+    </div>
+    <div class="sort-container">
+      <button id="sortTitle">Sort by Title (A-Z)</button>
+      <button id="sortTime">Sort by Posted Time</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Posted</th>
+          <th>Type</th>
+          <th>Level</th>
+          <th>Skill</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody id="jobList">
+      </tbody>
+    </table>
+  </div>
+  <script src="JobAnalysis.js"></script>
+</body>
+</html>
